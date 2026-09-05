@@ -11,7 +11,7 @@ const settings = {
   description: "OxBot MD - A powerful WhatsApp bot for managing group commands and automating tasks.",
   version: "3.0.7",
   updateZipUrl: "https://github.com/oxbotmd/oxbot-md/archive/refs/heads/main.zip",
-  repoUrl: "https://github.com/oxbotmd/oxbot-md.git"
+  repoUrl: "https://github.com/oxbotmd/oxbot-md"
 };
 
 module.exports = settings;
