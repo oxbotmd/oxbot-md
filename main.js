@@ -1018,6 +1018,34 @@ async function handleMessages(sock, messageUpdate, printLog) {
         console.error('Error in handleMessages:', error);
     }
 }
+// Handle group participant updates
+async function handleGroupParticipantUpdate(update) {
+    try {
+        const { id, participants, action } = update;
+
+        if (!id || !participants || !action) return;
+
+        console.log(
+            `[GROUP] ${action}: ${participants.join(', ')} in ${id}`
+        );
+
+        // Add your welcome/farewell/anti settings logic here later
+    } catch (error) {
+        console.error('Error handling group participant update:', error);
+    }
+}
+// Handle WhatsApp status updates
+async function handleStatus(status) {
+    try {
+        if (!status) return;
+
+        console.log('[STATUS]', status);
+
+        // Status handling logic can be added here later
+    } catch (error) {
+        console.error('Error handling status:', error);
+    }
+}
 
 // Export handler functions for index.js
 module.exports = {
