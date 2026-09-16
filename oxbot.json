@@ -1,1 +1,14 @@
-463423
+{
+  "bot-name": "Oxbot MD",
+  "owner-verification": "your-account-email@example.com",
+  "verification-code": "PASTE_THE_CODE_SHOWN_ON_THE_PAGE_HERE",
+  "tagline": "Simple WA bot with fast deployment",
+  "documentation-link": "https://github.com/oxbotmd/oxbot-md#readme",
+  "session-helper-url": "",
+  "env": {
+    "SESSION_ID": {
+      "description": "Paired WhatsApp session string",
+      "required": true
+    }
+  }
+}
